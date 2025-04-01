@@ -1,0 +1,12 @@
+{
+    "files.exclude": {
+        "**/*.aux": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.fls": true,
+        "**/*.log": true,
+        "**/*.synctex.gz": true
+    },
+    "latex-workshop.latex.rootFile.useSubFile": true,
+"latex-workshop.latex.outDir": "./pdf",
+
+}
