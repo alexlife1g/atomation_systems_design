@@ -1,4 +1,9 @@
 \documentclass[a4paper]{article}
+\usepackage{amsmath}      % для формул (опціонально)
+\usepackage{graphicx}     % для роботи з графікою
+\usepackage{booktabs}     % для красивих таблиць (опціонально)
+\usepackage{pgfplots}     % для побудови графіків
+\usepackage{tikz}         % TikZ — графічна система (необхідна pgfplots)
 
 \input{makros}
 
@@ -99,20 +104,32 @@ Blink3, зменшивши в 2 та збільшивши у 3 рази відп
     \item Значення, отримані з термістора, були в межах 0-1023.
 \end{enumerate}
 
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=1\textwidth]{imgs/LW4.2.png}
-%   \caption*{Рис. 4.4: Таблиця результатів вимірювання}
-% \end{figure} 
+\begin{table}[h!]
+  \centering
+  \begin{tabular}{|c|c|}
+  \hline
+  \textbf{Значення АЦП} & \textbf{Температура (℃)} \\
+  \hline
+  100 & 89.9 \\
+  200 & 64.4 \\
+  300 & 50.3 \\
+  400 & 40.6 \\
+  500 & 33.4 \\
+  600 & 27.6 \\
+  700 & 22.6 \\
+  800 & 18.3 \\
+  900 & 14.5 \\
+  1000 & 11.0 \\
+  \hline
+  \end{tabular}
+  \caption{Залежність температури від значення АЦП для BETA = 3950}
+  \end{table}
 
-
-% \begin{figure}[h]
-%   \centering
-%   \includegraphics[width=0.9\textwidth]{imgs/LW4.3.png}
-%   \caption*{Рис. 4.5: Діаграма результатів вимірювання}
-% \end{figure} 
-
-% \newpage
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{imgs/LW4_5.png} 
+  \caption*{Рис. 4.6: Графік залежності температури від значення АЦП}
+\end{figure} 
 
 \section*{Висновки}
 В ході виконання лабораторної роботи було вивчено принцип роботи мікроконтролера ATmega328 на платформі Arduino Uno, встановлено та налаштовано програмне середовище Arduino IDE, а також реалізовано програму для вимірювання температури за допомогою датчика.
