@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+\usepackage{listings}
+\input{makros}
+
+\begin{document}
+    \makrosLab{5}{п}{Побудова блок-схем алгоритмів}
+\section*{Тема роботи}
+Побудова блок-схем алгоритмів
+
+\section*{Мета роботи}
+Навчитись розробляти блок-схеми алгоритмів згідно ДСТУ.
+
+\section*{Завдання}
+Варіант 
+
+Скласти блок-схему алгоритму обчислення значень змінної згідно варіанту
+
+
+
+\section*{Система рівнянь}
+Функція \( Y \) визначається як:
+\[
+Y = 
+\begin{cases}
+x - 1.5, & \text{якщо } A = C; \quad x = A; \\
+x(A - C)^3, & \text{якщо } A \ne C; \\
+x^3 - A, & \text{якщо } A = C; \quad x = A; \\
+x + A^3, & 
+\end{cases}
+\]
+
+
+
+\section*{Покрокове пояснення алгоритму}
+
+\begin{enumerate}
+    \item Ввести значення змінних \( A \), \( C \), \( x \).
+    \item Перевірити умову: чи \( A = C \)?
+    \begin{itemize}
+        \item Якщо \textbf{так}, перейти до кроку 3.
+        \item Якщо \textbf{ні}, обчислити \( Y = x(A - C)^3 \) і завершити алгоритм.
+    \end{itemize}
+    \item Якщо \( A = C \), перевірити: чи \( x = A \)?
+    \begin{itemize}
+        \item Якщо \textbf{так}, обчислити \( Y = x - 1{,}5 \).
+        \item Якщо \textbf{ні}, обчислити \( Y = x^3 - A \).
+    \end{itemize}
+    \item Якщо жодна з вищенаведених умов не виконується (наприклад, значення некоректні), обчислити \( Y = x + A^3 \).
+\end{enumerate}
+\newpage
+\section*{Блок-схема алгоритму}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{imgs/PW5.drawio.png}
+    \caption*{Рис: 5.1 Блок-схема алгоритму рівняння}
+\end{figure}
+
+\section*{Висновок}
+У ході виконання практичної роботи я навчився  розробляти блок-схеми алгоритмів згідно ДСТУ.
+
+
+\end{document}
